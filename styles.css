@@ -1165,7 +1165,7 @@ p, li, blockquote, .choice, .pay, .ti { text-wrap: pretty; }
 .mat-b:hover .mat-foot h3, .mat-b.is-active .mat-foot h3 { color: var(--amber-hi); }
 
 /* Bônus (mesma diagramação dos cards largos de Materiais) */
-.bonus-alert { display: flex; justify-content: center; margin-top: 20px; }
+.bonus-alert { display: flex; justify-content: center; margin-bottom: 20px; }
 .bonus-alert__tag {
   display: inline-flex;
   align-items: center;
@@ -1331,7 +1331,7 @@ p, li, blockquote, .choice, .pay, .ti { text-wrap: pretty; }
 .price-row .old { font-size: 16px; color: var(--muted); text-decoration: line-through; }
 .price-row .cur { display: flex; align-items: flex-start; gap: 4px; }
 .price-row .cur .c { white-space: nowrap; margin-top: 10px; font-size: 20px; font-weight: 600; color: var(--muted); }
-.price-row .cur .v { color: var(--offwhite); font-size: clamp(44px, 5vw, 62px); font-weight: 800; line-height: .95; letter-spacing: -.04em; }
+.price-row .cur .v { color: var(--offwhite); font-size: clamp(58px, 6.4vw, 76px); font-weight: 800; line-height: .95; letter-spacing: -.04em; }
 .price-main .por-l { align-self: flex-end; margin-bottom: 10px; font-size: 16px; font-weight: 500; color: var(--muted); }
 .price-card .btn { margin-top: 24px; }
 .price-card .pay { margin-top: 14px; font-size: 14.5px; color: var(--muted); }
@@ -1763,7 +1763,9 @@ p, li, blockquote, .choice, .pay, .ti { text-wrap: pretty; }
 
   .price-card { padding: 22px; }
   .incl-box { padding: 22px 20px; }
-  .price-row .cur .v { font-size: 40px; }
+  /* "por" em linha própria; a parcela cresce com a tela e ocupa o que sobra ao lado de "12x R$" */
+  .price-main .por-l { flex-basis: 100%; margin-bottom: 0; }
+  .price-row .cur .v { font-size: clamp(42px, calc((100vw - 195px) / 2.9), 58px); }
   .guarantee { grid-template-columns: 1fr; gap: 14px; }
   .faq-toggle { padding: 18px 16px 18px 18px; font-size: 15px; }
   .faq-a p { padding: 0 18px 18px; }
