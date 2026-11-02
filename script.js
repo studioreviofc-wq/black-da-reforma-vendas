@@ -15,16 +15,16 @@ const CONFIG = {
   // Valores: somente o número, ex.: '1.997,00'
   offers: {
     alunos: {
-      checkoutUrl: '',
-      full: '5.000,00',  // [VALOR CHEIO]
-      installment: '',   // [PARCELA]
-      cash: '1.097,00',  // [VALOR]
+      checkoutUrl: 'https://pay.hub.la/2n0kyhJE1e7hmsFcjRvX',
+      full: '5.000,00',    // [VALOR CHEIO]
+      installment: '113,46', // [PARCELA]
+      cash: '1.097,00',    // [VALOR]
     },
     'nao-alunos': {
-      checkoutUrl: '',
-      full: '5.000,00',  // [VALOR CHEIO]
-      installment: '',   // [PARCELA]
-      cash: '1.497,00',  // [VALOR]
+      checkoutUrl: 'https://pay.hub.la/cyUdLLlpE3m0HgyhrzNr',
+      full: '5.000,00',    // [VALOR CHEIO]
+      installment: '154,83', // [PARCELA]
+      cash: '1.497,00',    // [VALOR]
     },
   },
 };
