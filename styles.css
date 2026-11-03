@@ -280,7 +280,7 @@ p, li, blockquote, .choice, .pay, .ti { text-wrap: pretty; }
   .hero {
     background-image:
       linear-gradient(180deg, rgba(5, 5, 5, .6) 0%, rgba(5, 5, 5, .2) 50%, rgba(5, 5, 5, 0) 75%),
-      url("assets/fundo_background-1600.webp?v=2");
+      url("https://academiaelitefiscal.com.br/wp-content/uploads/2026/11/fundo_background-1600.webp");
   }
 }
 @media (max-width: 640px) {
